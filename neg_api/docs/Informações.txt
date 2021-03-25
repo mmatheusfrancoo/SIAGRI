@@ -1,0 +1,6 @@
+Acionamento da API 
+* Consultar contratos
+http://localhost:8080/datasnap/rest/TSM/get_contratos
+
+* Validar ou desvalidar um contrato 
+http://localhost:8080/datasnap/rest/TSM/get_contratos/{id do contrato}/{Validador (1=valido | 0=desvalidar)}

@@ -1,0 +1,47 @@
+﻿object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'SIAGRI APP'
+  ClientHeight = 486
+  ClientWidth = 563
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object mmPrincipal: TMainMenu
+    Left = 40
+    Top = 24
+    object mniArquivo: TMenuItem
+      Locked = True
+      Text = 'Arquivo'
+      object mniSair: TMenuItem
+        Locked = True
+        Text = 'Sair'
+        OnClick = mniSairClick
+      end
+    end
+    object mniManutencoes: TMenuItem
+      Text = 'Manuten'#231#245'es'
+      object mniManutencaoProduto: TMenuItem
+        Locked = True
+        Text = 'Manuten'#231#227'o de produto'
+        OnClick = mniManutencaoProdutoClick
+      end
+      object mniManutencaoGrãos: TMenuItem
+        Locked = True
+        Text = 'Manuten'#231#227'o de gr'#227'os'
+        OnClick = mniManutencaoGrãosClick
+      end
+    end
+    object mniContratoArmazenagem: TMenuItem
+      Text = 'Contrato de armazenagem'
+      OnClick = mniContratoArmazenagemClick
+    end
+  end
+end
